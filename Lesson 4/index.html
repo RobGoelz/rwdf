@@ -19,6 +19,10 @@
       </div>
     </header>
 
+  <div class="container" onClick="myFunction(this), openFunction(drawer)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
     <nav id="drawer" class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#">News</a></li>
@@ -27,6 +31,7 @@
         <li class="nav__item"><a href="#">Blog</a></li>
       </ul>
     </nav>
+  <div>
 
     <main>
       <section class="content">
@@ -101,7 +106,7 @@
                 <td>2</td>
                 <td>Foxes</td>
               </tr>
-              
+
             </tbody>
           </table>
         </section>
@@ -170,6 +175,16 @@
           </ul>
         </section>
       </section>
+      <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+
+      function openFunction(e) {
+        e.classList.toggle('open');
+        e.stopPropagation();
+      }
+      </script>
       <footer>
         <ul>
           <li><a href="#">Contact us</a></li>
