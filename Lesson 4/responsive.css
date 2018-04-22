@@ -11,6 +11,24 @@
   order: 10;
 }
 
+ @media screen and (max-width: 450px) {
+  body {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #424242;
+  }
+  article > p {
+    display: none;
+  }
+  .snippet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .snippet__thumbnail {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 549px) {
   .header__logo {
     height: 48px;
