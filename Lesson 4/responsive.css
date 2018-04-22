@@ -20,12 +20,23 @@
   article > p {
     display: none;
   }
-  .snippet {
-    display: flex;
-    flex-wrap: wrap;
+  .snippet > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   .snippet__thumbnail {
     display: none;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  .snippet > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 
